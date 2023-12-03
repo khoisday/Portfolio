@@ -1,15 +1,13 @@
-function getTime(){
-    // Get current time
-    let currentTime=new Date();
-    let hours=currentTime.getHours();
-    let minutes= currentTime.getMinutes();
-    let formatedTime = hours + ":" + (minutes <10 ? "0" + minutes:minutes);
-
-    document.getElementById("current-time").textContent = " "+ formatedTime;
+function updateTime() {
+    // Set the time zone to Melbourne, Australia
+    var options = { timeZone: 'Australia/Melbourne', hour12: false };
+    var currentTime = new Date().toLocaleTimeString('en-US', options);
     
+    document.getElementById("current-time").textContent = " " + currentTime;
 }
 
+// Update the time every second
+setInterval(updateTime, 1000);
 
-
-setInterval(getTime,1000);
-getTime;
+// Initial call to set the time immediately
+updateTime();
