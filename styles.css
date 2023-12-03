@@ -1,0 +1,25 @@
+html{
+    margin:0px;
+    color:#000;
+    font-family: General Sans;
+    font-size: 35px;
+    font-style: normal;
+    line-height:normal;
+    background: #F2F2F2;
+}
+header{
+    display: flex;
+}
+
+.logo{
+    width:188px;
+    height: 78px;
+    flex-shrink: 0;
+    margin: 35px 0 0 65px;
+}
+.time{
+    font-weight: 500;
+    display: flex;
+    margin-top:55px;
+    margin-left: 90px;
+}
