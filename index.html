@@ -5,13 +5,34 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./styles.css">            
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+
+
 </head>
 <body>
     <header class="fixed">
-        <img class="logo" id="logo" src="khoing.png" alt="logo">
-        <p class="time">Melbourne, Australia &nbsp<span id="current-time"> Loading...</span></p>
+        <div class="logo_and_time">
+            <img class="logo" id="logo" src="khoing.png" alt="logo">
+            <p class="time">Melbourne, Australia &nbsp<span id="current-time"> Loading...</span></p>
+        </div>
+        <nav id="nav-bar"></nav>
         <script src="script.js"></script>
+        <nav id="nav-bar">
+            <ul>
+                <li><a class="nav-link" id="link-about" href="#about"> About</a></li>
+                <li><a class="nav-link" id="link-skills" href="#skills"> Skills</a></li>
+                <li><a class="nav-link" id="link-projects" href="#projects"> Projects</a></li>
+                <li><button class="pill" type="button"><a class="nav-link" id="link-contact" href="#contact"> Contact</a></button></li>
+            </ul>
+        </nav>
     </header>
+    <main>
+        <div class="name linear-stroke" style="color: #262626; font-size: 225px; font-family: General Sans Variable; font-weight: 600; word-wrap: break-word; z-index: 999;">HEY, I'M KHOI</div>
+        <div class="name linear-stroke-bot" id="layer1" style="color: #f2f2f2; font-size: 225px; font-family: General Sans Variable; font-weight: 600; word-wrap: break-word">HEY, I'M KHOI</div>
+        <div class="name linear-stroke-bot" id="layer2" style="color: #f2f2f2; font-size: 225px; font-family: General Sans Variable; font-weight: 600; word-wrap: break-word">HEY, I'M KHOI</div>
+        <div class="name linear-stroke-top" id="layer3" style="color: #f2f2f2; font-size: 225px; font-family: General Sans Variable; font-weight: 600; word-wrap: break-word">HEY, I'M KHOI</div>
+        <div class="name linear-stroke-top" id="layer4" style="color: #f2f2f2; font-size: 225px; font-family: General Sans Variable; font-weight: 600; word-wrap: break-word">HEY, I'M KHOI</div>
+    </main>
 
 </body>
 </html>
