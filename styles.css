@@ -29,6 +29,7 @@ header{
     display: flex;
     position:fixed;
     justify-content: space-around;
+    z-index: 999;
 }
 
 .logo_and_time{
@@ -88,23 +89,16 @@ button{
     transform: translate(-50%, -50%); /* Center the element */
     overflow: hidden;
     white-space: nowrap;
-    letter-spacing: -11.25px;
 }
 
-#layer1{
-    top: 25%;
-}
-
-#layer2 {
-    top: 37.5%;
+#layer1, #layer2,#layer3,#layer4 {
+    opacity:0;
 }
 
 #layer3 {
-    top:62.5%;
     z-index: 2;
 }
 #layer4{
-    top:75%;
     z-index: 1;
 }
 .linear-stroke-bot{
@@ -121,12 +115,4 @@ button{
     -webkit-background-clip: text;
     -webkit-text-stroke: 2px transparent;
 }
-.bug {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0) 100%);
-    background-size: 100% 100%;
-    text-transform: capitalize;
-    -webkit-background-clip: text;
-    -webkit-text-stroke: 2px transparent;
-}
-
 
